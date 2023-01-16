@@ -6,7 +6,7 @@ tasks:
     - checkout    
     - commands:
       - |
-      sonar-scanner \
+       sonar-scanner \
         -Dsonar.projectKey=rails-ruby \
         -Dsonar.sources=. \
         -Dsonar.host.url=http://65.2.9.93:9000 \
