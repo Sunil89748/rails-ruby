@@ -1,5 +1,5 @@
 tasks:
-  hello-job:
+  rails-ruby-sonar-job:
     runner: sonarsource/sonar-scanner-cli
     steps:
    
@@ -7,7 +7,7 @@ tasks:
     - commands:
       - |
       sonar-scanner \
-       -Dsonar.projectKey=ruby \
-       -Dsonar.sources=. \
-       -Dsonar.host.url=http://13.233.126.85:9000 \
-       -Dsonar.login=0a6d4c4d4704991b4efebdb329dcedf2c7e75151
+        -Dsonar.projectKey=rails-ruby \
+        -Dsonar.sources=. \
+        -Dsonar.host.url=http://65.2.9.93:9000 \
+        -Dsonar.login=05eb97d989880ebb3cd970186c4db2e2ba1e132b
