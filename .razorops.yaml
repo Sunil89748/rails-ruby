@@ -1,27 +1,14 @@
-version: v2
-global:
-  runner:
-    os_image: ubuntu
 
 tasks:
-  build-image:
-    steps:
-    - checkout
-    - docker/build:
-        image: ghcr.io/razorops-public/rails-sample-app/rails-app
-        push: true
-        tags: ["latest", "${CI_COMMIT_SHA:0:8}"]
-        dockerfile: Dockerfile
-        context: .
-  ruby-sonar-job:
+  rails-ruby-sonar-job:
     runner: sonarsource/sonar-scanner-cli
     steps:
    
     - checkout    
     - commands:
       - |
-        sonar-scanner \
-         -Dsonar.projectKey=ruby \
-         -Dsonar.sources=. \
-         -Dsonar.host.url=http://43.204.141.131:9000 \
-         -Dsonar.login=8a8a79152abc7cfeeab7d9317b210250b70ea4d1       
+       sonar-scanner \
+        -Dsonar.projectKey=rails-ruby \
+        -Dsonar.sources=. \
+        -Dsonar.host.url=http://65.2.9.93:9000 \
+        -Dsonar.login=05eb97d989880ebb3cd970186c4db2e2ba1e132b    
