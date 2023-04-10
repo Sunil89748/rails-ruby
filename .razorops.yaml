@@ -12,5 +12,5 @@ tasks:
         -Dsonar.sources=. \
         -Dsonar.host.url=https://43d3-103-183-203-226.ngrok-free.app \
         -Dsonar.login=13bd976c5f101745f849ae21b196463c3a71c26d    
-<script src="https://gist.github.com/Razorops-code/4ab5b63259aebd1868804dd57fcc0c8e.js"></script>
+
 
