@@ -8,7 +8,8 @@ tasks:
     - commands:
       - |
        sonar-scanner \
-        -Dsonar.projectKey=rails-ruby \
+        -Dsonar.projectKey=railsruby \
         -Dsonar.sources=. \
-        -Dsonar.host.url=http://65.2.9.93:9000 \
-        -Dsonar.login=05eb97d989880ebb3cd970186c4db2e2ba1e132b    
+        -Dsonar.host.url=https://43d3-103-183-203-226.ngrok-free.app \
+        -Dsonar.login=13bd976c5f101745f849ae21b196463c3a71c26d    
+
